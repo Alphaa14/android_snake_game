@@ -45,8 +45,8 @@ pipeline {
         // }
         stage("BUILD") {
             steps{
-                echo "build"
-                sh './gradlew build' //run a gradle task
+                echo "Assemble"
+                sh './gradlew clean assembleRelease' //run a gradle task
 
             }
         }
